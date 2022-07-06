@@ -16,10 +16,25 @@
     var _tomonth=document.getElementById("tomonth").value;
     var _toyear=document.getElementById("toyear").value;
 
-//    function agecalculate(){
+   
 
-    
+   function calculateage(){
 
-//     if( _psntYear> )
-//    }
+    if(_psntYear>_toyear && _psntdate>_todate && _psntmonth >_tomonth){
+        
+        var _yearcalculate=parseInt(_psntYear)-parseInt(_toyear);
+        var _monthcalculate= parseInt(_psntmonth)-parseInt(_tomonth);
+        var _datecalculate= parseInt(_psntdate)-parseInt(_todate);
+
+        let ca=_yearcalculate;
+        let mc=_monthcalculate;
+        let dc=_datecalculate;
+ 
+    document.getElementById("age").innerHTML= "your age is " + ca + " years " + mc + " month " + dc + " Days ";
+    }
+
+ 
+   }
+
+     
 
