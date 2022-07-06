@@ -60,7 +60,7 @@
            _toyear= _toyear-_byear;
         }
 
-       document.getElementById("age").innerHTML= "your age is" + _byear + "years" + _bmonth + "month" + _bdate+ "days";
+       document.getElementById("age").innerHTML= "your age is" + _toyear + "years" + _tomonth + "month" + _todate+ "days";
 
 
      }
@@ -71,7 +71,7 @@
         _tomonth=((_tomonth+12)-_bmonth);
         _toyear=((_toyear-1)-_byear);
 
-        document.getElementById("age").innerHTML= "your age is" + _byear + "years" + _bmonth + "month" + _bdate+ "days";
+        document.getElementById("age").innerHTML= "your age is" + _toyear + "years" + _tomonth + "month" + _todate + "days";
      } 
 
        
